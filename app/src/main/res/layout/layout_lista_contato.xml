@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/foto_contato"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_lista_contatos"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_nome_contato"
+            android:text="João da Silva"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/cx_icone_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_telefone_contato"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_contato_telefone"/>
+            <TextView
+                android:id="@+id/txt_telefone_contato"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="6"
+                android:text="940048922"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:paddingTop="2dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_edit_contato"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_edit_contato"
+        android:layout_marginLeft="8dp"/>
+
+</LinearLayout>

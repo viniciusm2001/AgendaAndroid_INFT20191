@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroContatoActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp">
+
+
+        <ImageView
+            android:id="@+id/foto_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_lista_contatos"/>
+
+        <ImageButton
+            android:id="@+id/btn_add_ft_camera"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_ft_camera"
+            android:background="@drawable/btn_float"/>
+
+        <ImageButton
+            android:id="@+id/btn_add_ft_salva"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="68dp"
+            android:src="@drawable/ic_add_ft_salva"
+            android:background="@drawable/btn_float"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/til_txt_nome"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/txt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Endereco"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/til_txt_endereco"
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/txt_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/til_txt_telefone"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/txt_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/til_txt_email"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Linkedin"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/til_txt_linkedin"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/txt_linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
